@@ -1,0 +1,23 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+int main(){
+
+    double zp1 = 11.7; // zapravka palyva
+    double zp2 = 14.3;
+    double zp3 = 12.2;
+    double zp4 = 8.5;
+    double pp = 67308.5; //pochatkovyy probih
+    double kp = 68750.5;  // kinzevyy probih
+
+    double zop = zp1 + zp2 + zp3 + zp4; // zahalnyy obyem payva
+    double pv = kp - pp; // proydena vistan
+    double rozhid = pv / zop;
+
+    cout << fixed << setprecision(2) << rozhid;
+    
+ 
+ 
+  return 0;
+
+}
