@@ -1,0 +1,29 @@
+#include <iostream> 
+#include <iomanip>
+using namespace std;
+int main(){
+
+int bal1, bal2, bal3;
+double koef1, koef2, koef3;
+
+std::cout <<  "vvedid first pary (vvedid bal i koef studenta)";
+std::cin >> bal1 >> koef1;
+
+std::cout << "vvedid second pary (vvedid bal i koef studenta)";
+std::cin >> bal2 >> koef2;
+
+std::cout << "vvedid third pary (vvedid bal i koef studenta)";
+std::cin >> bal3 >> koef3;
+
+double vag = (bal1 * koef1) + (bal2 * koef2) + (bal3 * koef3); // vagovyy koef
+
+std::cout << std::fixed << std::setprecision(2);
+std::cout << std::endl;
+std::cout << "first para baliv " << bal1 << koef1 << std::endl;
+std::cout << "secind para baliv " << bal2 << koef2 << std::endl;
+std::cout << "third para baliv " << bal3 << koef3 << std::endl;
+std::cout << "vagovyy koef " << vag << std::endl;
+
+
+return 0;
+}
